@@ -3,10 +3,13 @@
 
 ### Features
 
--Real time chat enigine for comments
--Blog
--Portfolio
--Drag and drop interface
+*Real time chat enigine for comments
+
+*Blog
+
+*Portfolio
+
+*Drag and drop interface
 
 ### Code Example
 
