@@ -20,12 +20,16 @@ puts "3 Topics created"
 )
 end
 
+puts "10 blog posts created"
+
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
     percent_utilized: 15
   )
 end
+
+puts "5 skills created"
 
 8.times do |portfolio_item|
   Portfolio.create!(
@@ -40,8 +44,6 @@ end
     )
 end
 
-puts "9 portfolio items created"
-
 1.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
@@ -54,3 +56,13 @@ puts "9 portfolio items created"
     thumb_image: "http://placehold.it/350x200"
     )
 end
+
+puts "9 portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+    )
+end
+
+puts "3 technologies created"
